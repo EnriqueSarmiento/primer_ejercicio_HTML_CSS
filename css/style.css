@@ -1,0 +1,209 @@
+:root{
+    --primario: #232f3e;
+    --secundario:   #f0c14b;
+    --terciario: #0f1111;
+    --blanco: #ffffff;
+}
+/** Globales **/
+.html{
+    font-size: 62.5%;
+}
+.body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/** HEADER SECUNDARIO **/
+
+.header-secundario{
+    background-color: var(--terciario);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.header-secundario a{
+    color: var(--blanco);
+    text-decoration: unset;
+    font-size: .5rem;
+}
+.header-secundario a:nth-child(1){
+    grid-column: 2/ 3;
+    font-size: 1.7rem;
+}
+.header-secundario a:nth-child(3){
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-size: .7rem;
+}
+.header-secundario a:nth-child(2){
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: .7rem;
+}
+.header-secundario a:nth-child(4){
+    grid-row: 2 / 3;
+    grid-column: 3 / 3;
+    font-size: .7rem;
+}
+.header-secundario a:nth-child(5){
+    grid-row: 3 / 3;
+    grid-column: 2 / 3;  
+}
+.span-nav{
+    font-weight: bolder;
+    justify-content: flex-end;
+}
+@media (min-width: 480px) {
+    .header-secundario{
+        display: flex;
+        flex-direction: row;
+        text-align:center;
+        justify-content: space-evenly;
+    }
+    .header-secundario a{
+        font-size: 1rem;
+        padding: .5rem;
+        justify-content: space-evenly;
+    }
+    .header-secundario a:nth-child(1){
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .span-nav{
+        display: block;
+        align-items: flex-end;
+    } 
+}
+
+
+/** NAVEGACION PRINCIPAL **/
+.nav-principal{
+    background-color: var(--primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.nav-principal a{
+    color: var(--blanco);
+    text-decoration: unset;
+}
+@media (min-width: 768px) {
+      .nav-principal{
+          display: flex;
+          flex-direction: row;
+      }
+      .nav-principal a{
+          font-size: .7rem;
+      }
+}
+/** Imagen de fondo **/
+.pg-principal{
+    background-image: url(../img/primera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding-top: 1rem;
+    position: relativa;
+}
+    .deal .blanco{
+        position: absolute;
+        top: 300px;
+        left: 4.5%;
+
+    }
+    .favorite .blanco{
+        position: absolute;
+        top: 300px;
+        left: 37%;
+    }
+    .refresh .blanco{
+        position: absolute;
+        top: 300px;
+        left: 69.5%;
+    }
+.contenido-principal .cont-b{
+    position: absolute;
+    top: 290px;
+    left: 6%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+.contenido-principal .refresh .cont-b{
+    position:absolute;
+    left: 72%;
+}
+.contenido-principal .favorite .cont-b{
+    position: absolute;
+    left: 39%;
+}
+
+.propaganda{
+    margin-top: 10rem;
+    margin-left: 10rem;
+    
+   
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.final a{
+    background-color: #f1c862ea;
+    color: black;
+    text-decoration: none;
+    padding: .9%;
+    border-radius: .2rem;
+    width: 23%;
+    text-emphasis: space-evenly;
+    border-color: gray;
+    margin-top: 0;
+}
+.final a:hover{
+    background-color: rgb(238, 209, 44);
+}
+hr:nth-child(1){
+   margin-bottom: 2.5rem;
+}
+.back-color{
+    background: linear-gradient(to top , #eaeded 15%, #42dcff 35%) ;
+    padding-bottom: 3rem;
+}
+.boton-top a{
+    color: white;
+    text-decoration: none;
+    text-emphasis: center; 
+}
+.boton-top{
+    background-color: #37475a;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-top:hover{
+    background-color: #37475ae1;
+}
+.foot{
+    background-color: #232f3e ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.foot h2{
+    color: white;
+    font-size: 2rem;
+}
+.foot p{
+    color: white;
+    font-weight: lighter;
+}
